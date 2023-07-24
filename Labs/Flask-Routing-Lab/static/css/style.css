@@ -1,0 +1,22 @@
+body {
+   width: 75%;
+   margin: auto;
+   text-align: center;
+}
+
+figure {
+   float: left;
+   padding: 5px;
+}
+
+img {
+   object-fit: cover;
+   width: 230px;
+   height: 230px;
+ }
+
+.imgs::after {
+   content: "";
+   clear: both;
+   display: table;
+}

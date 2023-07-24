@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flower Shop</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Shop!</h1>
+    <p1>Here, you will find many flowers and plants.</p1>
+
+    <div class="imgs">
+      <figure>
+        <a href="/product">
+          <img src="https://cdn.atwilltech.com/flowerdatabase/_/95044-sunflower-bouquet-616e8bf5033752.65492220.425.jpg" alt="sunflowers" >
+          <figcaption>Sunflowers</figcaption>
+        </a>
+      </figure>
+
+      <figure>
+      <a href="/product">
+        <img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/92926swkv1x.jpg" alt="lillies" >
+        <figcaption>Lillies</figcaption>
+      </a>
+      </figure>
+
+      <figure>
+        <a href="/product">
+          <img src="https://www.1800flowersmesa.com/assets/1/14/DimLarge/167530l.jpg?216082" alt="lavender" > 
+          <figcaption>Lavender</figcaption>
+        </a>
+      </figure>
+    </div>
+
+        
+    <h2>Links</h2>
+    <li><a href="/product">Product</a></li>
+    <li><a href="/cart">Cart</a></li>
+</div>
+</body>
+</html>

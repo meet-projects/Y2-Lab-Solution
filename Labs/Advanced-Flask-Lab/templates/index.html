@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Instagram</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<span class="avatar"><img src="{{image_link}}" alt="" /></span>
+
+            <h1>{{user_bio}}</h1>
+            <br>
+            <!-- About me button -->
+            <a href="/about"><button style="color:white;width:40%" >More about me</button></a>
+            <!--  -->
+            <br> <br>
+						<ul class="icons">
+							<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+							<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+					</header>
+
+				<!-- Main -->
+					<section id="main">
+
+						<!-- Thumbnails -->
+							<section class="thumbnails">
+                {% for post in posts %}
+                <div>
+                  <a href="">
+                        <img src="{{post}}" alt="" />
+                        <h3>{{posts[post]}}</h3>
+                      </a>
+                </div>  
+                {% endfor %}
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p>&copy; MEET's (fake) Instagram. No rights reserved. 
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+			<script src="static/js/jquery.poptrox.min.js"></script>
+			<script src="static/js/skel.min.js"></script>
+			<script src="static/js/main.js"></script>
+
+	</body>
+</html>
